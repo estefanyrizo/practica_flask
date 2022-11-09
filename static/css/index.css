@@ -1,0 +1,13 @@
+@import url('anotaciones.css');
+@import url('biografia.css');
+@import url('contactos.css');
+@import url('correos.css');
+@import url('mensajes.css');
+@import url('usuarios.css');
+
+.minions{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    width: 60%;
+}

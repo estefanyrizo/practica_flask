@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Mostrar Usuarios
+{% endblock title %}
+
+{% block main %}
+
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Usuario</th>
+      <th scope="col">Correo</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+{% for fila in filas %}
+<tr>
+    <th scope="row">{{fila.id}}</th>
+    <td>{{fila.username}}</td>
+    <td>{{fila.email}}</td>
+    
+</tr>
+{% endfor %}
+  </tbody>
+</table>
+
+
+{% endblock %}

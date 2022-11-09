@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Registrarse
+{% endblock %}
+
+{% block main %}
+
+<div class="login-box">
+  <div class="register" align="center">
+    <form action="/register" method="post">
+      <h3 class="sign pt-4 pb-4" align="center">Registro</h3>
+      <div class="form-group">
+        <input autocomplete="off" align="center" autofocus class="username" name="username" placeholder="Usuario"
+          type="text" required/>
+        <input class="password" align="center" name="password" placeholder="Contraseña" type="password" required/>
+        <input class="email" align="center" name="email" placeholder="Correo" type="text" required/>
+      </div>
+      <div class="form-group" align="center">
+        <button class="submit" type="submit">Registar</button>
+      </div>
+      <a href="/login">¿Ya tienes una cuenta?</a>
+  </div>
+  </form>
+</div>
+</div>
+{% endblock %}
